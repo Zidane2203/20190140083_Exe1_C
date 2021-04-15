@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form_Pendaftaran">
+
+    <TextView
+        android:id="@+id/pendaftaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPendaftaran"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nNama"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pendaftaran"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/edAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nAlamat"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNama"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGender"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamat"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nEmail"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rAgama2" />
+
+    <RadioGroup
+        android:id="@+id/rGender"
+        android:layout_width="95dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamat"
+        app:layout_constraintVertical_bias="0.016">
+
+        <RadioButton
+            android:id="@+id/rMale"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/male"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toEndOf="@+id/tvGender"
+            app:layout_constraintTop_toBottomOf="@+id/edAlamat"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <RadioButton
+            android:id="@+id/rFemale"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAgama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvAgama"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rAgama"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <RadioGroup
+        android:id="@+id/rAgama"
+        android:layout_width="83dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="11dp"
+        android:baselineAligned="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rGender"
+        app:layout_constraintVertical_bias="0.064">
+
+        <RadioButton
+            android:id="@+id/rIslam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/islam" />
+
+        <RadioButton
+            android:id="@+id/rKatolik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"
+            android:text="@string/katolik" />
+
+        <RadioButton
+            android:id="@+id/rKKristen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kristen" />
+
+        <RadioButton
+            android:id="@+id/rHindu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hindu" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rAgama2"
+        android:layout_width="189dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/rAgama"
+        app:layout_constraintTop_toBottomOf="@+id/rGender"
+        app:layout_constraintVertical_bias="0.097">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buddha" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/konghucu" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penganut_kepercayaan" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edRPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nrePassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword"
+        app:layout_constraintVertical_bias="0.137"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nPassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAlamat"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <Button
+        android:id="@+id/btSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btselesai"
+        android:textSize="15pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edRPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

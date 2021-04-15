@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">20190140083_Exe1_C</string>
+    <string name="tlogo">Logo</string>
+    <string name="tEmail">Email</string>
+    <string name="tPassword">Password</string>
+
+    <string name="nrePassword">Re-enter Password</string>
+    <string name="nNama">Masukkan Nama</string>
+    <string name="nAlamat">Masukkan Alamat</string>
+    <string name="nEmail">Masukkan Email</string>
+    <string name="nPassword">Masukkan Password</string>
+
+    <string name="bsignin">Sign-In</string>
+    <string name="bsignup">Sign-Up</string>
+
+    <string name="tvwelcome">Welcome to Login page!</string>
+
+    <string name="tvEmail">Email :</string>
+    <string name="tvPassword">Password :</string>
+    <string name="tvsignup">Tidak ada akun?</string>
+    <string name="tvPendaftaran">Pendaftaran</string>
+    <string name="tvGender">Gender</string>
+    <string name="tvAgama">Agama</string>
+    <string name="btselesai">Selesai</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="islam">Islam</string>
+    <string name="katolik">Katolik</string>
+    <string name="kristen">Kristen</string>
+    <string name="hindu">Hindu</string>
+    <string name="buddha">Buddha</string>
+    <string name="konghucu">Konghucu</string>
+    <string name="penganut_kepercayaan">Penganut Kepercayaan</string>
+
+    <string name="lihatdata">Lihat Data</string>
+    <string name="editdata">Edit Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
+</resources>
